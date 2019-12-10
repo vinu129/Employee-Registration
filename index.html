@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Employee Registration</title>
+    <link rel="stylesheet" href="./assets/css/styles.min.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Raleway:200,300,400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- Content-wrapper -->
+    <div class="content-wrapper h-100 mx-2 w-1000 pt-4">
+        <h3 class="border-bottom pb-4 mb-4">Employee Resignation</h3>
+        <!-- Nav-tabs -->
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item text-center bg-light">
+                <a class="nav-link text-uppercase active" id="personal-details" data-toggle="pill"
+                    href="#personal-detail-pill" role="tab" aria-controls="personal-detail-pill"
+                    aria-selected="true">personal details</a>
+            </li>
+            <li class="nav-item text-center bg-light">
+                <a class="nav-link text-uppercase" id="bank-details" data-toggle="pill" href="#bank-detail-pill"
+                    role="tab" aria-controls="bank-detail-pill" aria-selected="false">bank details</a>
+            </li>
+            <li class="nav-item text-center bg-light">
+                <a class="nav-link text-uppercase" id="family-details" data-toggle="pill" href="#family-detail-pill"
+                    role="tab" aria-controls="family-detail-pill" aria-selected="false">family / nominee details</a>
+            </li>
+        </ul>
+        <!--Nav-tab-content -->
+        <div class="tab-content px-3" id="pills-tabContent">
+            <!-- Personal details -->
+            <div class="tab-pane fade show active " id="personal-detail-pill" role="tabpanel"
+                aria-labelledby="personal-details">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="name" class="required position-relative">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="First Name">
+                        </div>
+                        <div class="form-group d-flex align-items-end col-md-4">
+                            <input type="text" class="form-control " id="name" placeholder="Father's Name">
+                        </div>
+                        <div class="form-group d-flex align-items-end col-md-4">
+                            <input type="text" class="form-control" id="name" placeholder="Last Name">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="dob" class="required position-relative">Date of Birth</label>
+                            <input type="date" class="form-control" id="dob">
+                        </div>
+                        <div class="form-group  col-md-4">
+                            <label for="doj" class="required position-relative">Date of Joining</label>
+                            <input type="date" class="form-control" id="doj">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="gender" class="required position-relative">Gender</label>
+                            <div class="d-flex align-items-center h-50">
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="male" name="gender" class="custom-control-input">
+                                    <label class="custom-control-label" for="male">Male</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="female" name="gender" class="custom-control-input">
+                                    <label class="custom-control-label" for="female">Female</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row border-bottom  pb-4">
+                        <div class="form-group col-md-4">
+                            <label for="religion" class="required position-relative">Religion</label>
+                            <input type="text" class="form-control" id="religion">
+                        </div>
+                        <div class="form-group  col-md-4">
+                            <label for="phone-no" class="required position-relative">Phone no</label>
+                            <input type="text" class="form-control" id="phone-no">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="email-add" class="required position-relative">Email</label>
+                            <input type="email" name="email" class="form-control" id="email-add"
+                                placeholder="example@gmail.com">
+                        </div>
+                    </div>
+                    <div class="form-row pt-4">
+                        <div class="form-group col-md-8">
+                            <label for="present-add" class="required position-relative">Present Address</label>
+                            <input type="text" class="form-control" id="present-add" placeholder="Street Address">
+                        </div>
+                        <div class="form-group d-flex align-items-end col-md-4">
+                            <input type="text" class="form-control" id="present-city" placeholder="Enter City">
+                        </div>
+
+                    </div>
+                    <div class="form-row  border-bottom  pb-4">
+                        <div class="form-group d-flex align-items-end col-md-4">
+                            <input type="text" class="form-control" id="present-state" placeholder="Enter State">
+                        </div>
+                        <div class="form-group d-flex align-items-end col-md-4">
+                            <input type="text" class="form-control" id="present-postal-code"
+                                placeholder="Postal/ Zipcode">
+                        </div>
+                    </div>
+                    <div class="form-row pt-4">
+                        <div class="form-group col-md-8">
+                            <label for="permanent-add" class="required position-relative">Permanent Address</label>
+                            <input type="text" class="form-control" id="permanent-add" placeholder="Street Address">
+                        </div>
+                        <div class="form-group d-flex align-items-end col-md-4">
+                            <input type="text" class="form-control" id="permanent-city" placeholder="Enter City">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group d-flex align-items-end col-md-4">
+                            <input type="text" class="form-control" id="permanent-state" placeholder="Enter State">
+                        </div>
+                        <div class="form-group d-flex align-items-end col-md-4">
+                            <input type="text" class="form-control" id="permanent-postal-code"
+                                placeholder="Postal/ Zipcode">
+                        </div>
+                    </div>
+                    <div class="form-row  pb-4">
+                        <div class="form-group col-md-4">
+                            <label for="designation" class="required position-relative">Designation</label>
+                            <input type="text" class="form-control" id="designation">
+                        </div>
+                        <div class="form-group  col-md-4">
+                            <label for="company-name" class="required position-relative">Company Name</label>
+                            <input type="text" class="form-control" id="company-name">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="marital-status" class="required position-relative">Marital Status</label>
+                            <div class="d-flex align-items-center h-50">
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="married" name="marital-status" class="custom-control-input">
+                                    <label class="custom-control-label" for="married">Married</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="unmarried" name="marital-status"
+                                        class="custom-control-input">
+                                    <label class="custom-control-label" for="unmarried">Unmarried</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-4">
+                        <button type="submit" class="btn btn-primary ml-auto mr-4">Next</button>
+                    </div>
+                </form>
+            </div>
+            <!-- Bank-details -->
+            <div class="tab-pane fade" id="bank-detail-pill" role="tabpanel" aria-labelledby="bank-details">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="name-in-bank">Name in Bank</label>
+                            <input type="text" class="form-control" id="name-in-bank">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="bank-ac-no" class="required position-relative">Bank Ac No.</label>
+                            <input type="text" class="form-control " id="bank-ac-no">
+                        </div>
+                    </div>
+                    <div class="form-row border-bottom  pb-4">
+                        <div class="form-group col-md-6">
+                            <label for="isfc-code" class="required position-relative">ISFC Code</label>
+                            <input type="text" class="form-control" id="isfc-code">
+                        </div>
+                        <div class="form-group col-md-6 ">
+                            <label for="check-book" class="required position-relative">Check Book</label>
+                            <input type="file" class="form-control border-0" id="check-book">
+                        </div>
+                    </div>
+                    <div class="form-row pt-4">
+                        <div class="form-group col-md-4">
+                            <label for="esic-no" class="required position-relative">Employee ESIC No.</label>
+                            <input type="text" class="form-control" id="esic-no">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="pf-no" class="required position-relative">Emp PF/UAN No.</label>
+                            <select name="pf-no" id="pf-no" class="form-control ">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="esic-flag" class="required position-relative">ESIC Flag</label>
+                            <select name="esic-flag" id="esic-flag" class="form-control ">
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row  border-bottom  pb-4">
+                        <div class="form-group col-md-4">
+                            <label for="pt-flag" class="required position-relative">PT Flag</label>
+                            <select name="pt-flag" id="pt-flag" class="form-control ">
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="pf-stat-ceiling" class="required position-relative">PF Statutary Ceiling</label>
+                            <select name="pf-stat-ceiling" id="pf-stat-ceiling" class="form-control ">
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="pf-flag" class="required position-relative">PF Flag</label>
+                            <select name="pf-flag" id="pf-flag" class="form-control ">
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row pt-4 border-bottom pb-4">
+                        <div class="form-group col-md-4">
+                            <label for="name-in-adhar" class="required position-relative">Name as Adhar</label>
+                            <input type="text" class="form-control" id="name-in-adhar">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="adhar-no" class="required position-relative">Adhar Number</label>
+                            <input type="text" class="form-control " id="adhar-no">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="adhar-proof" class="required position-relative">Adhar Proof</label>
+                            <input type="file" class="form-control border-0" id="adhar-proof">
+                        </div>
+                    </div>
+                    <div class="form-row pt-4">
+                        <div class="form-group col-md-4">
+                            <label for="name-in-pan" class="required position-relative">Name as Pan</label>
+                            <input type="text" class="form-control" id="name-in-pan">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="pan-no" class="required position-relative">Pan Number</label>
+                            <input type="text" class="form-control " id="pan-no">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="pan-proof" class="required position-relative">Pan Proof</label>
+                            <input type="file" class="form-control border-0" id="pan-proof">
+                        </div>
+                    </div>
+                    <div class="d-flex mb-4 pt-4">
+                        <button type="submit" class="btn btn-primary ml-auto mr-3">Back</button>
+                        <button type="submit" class="btn btn-primary mr-4">Next</button>
+                    </div>
+                </form>
+            </div>
+            <!-- Family/Nominee details -->
+            <div class="tab-pane fade" id="family-detail-pill" role="tabpanel" aria-labelledby="family-details">
+                <form>
+                    <div class="font-weight-bold required position-relative pb-3">Pesonal Details</div>
+                    <div class="detail-field rounded py-2 px-4 mb-3">
+                        <div class="form-row  pb-4">
+                            <div class="form-group col-md-4">
+                                <label for="first-name">First-name</label>
+                                <input type="text" class="form-control" id="first-name">
+                            </div>
+                            <div class="form-group  col-md-4">
+                                <label for="last-name">Last Name</label>
+                                <input type="text" class="form-control" id="last-name">
+                            </div>
+                            <div class="form-group  col-md-4">
+                                <label for="relation">Relation</label>
+                                <select name="relation" id="relation" class="form-control ">
+                                    <option value="spouse">Spouse</option>
+                                    <option value="mother">Mother</option>
+                                    <option value="father">Father</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row ">
+                            <div class="form-group col-md-4">
+                                <label for="present-add">Present Address</label>
+                                <input type="text" class="form-control" id="present-add">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="permanent-add">Permanent Address</label>
+                                <input type="text" class="form-control" id="permanent-add">
+                            </div>
+                            <div class="form-group  col-md-4">
+                                <label for="n/f">Nominee / Family Member ?</label>
+                                <select name="n/f" id="n/f" class="form-control ">
+                                    <option value="n">Nominee</option>
+                                    <option value="f">Family member</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-4 pt-4 border-bottom pb-4">
+                        <button type="submit" class="btn btn-info ml-auto mr-3">Add</button>
+                    </div>
+                    <div class="font-weight-bold required position-relative mt-4 pb-3">Contact Details</div>
+                    <div class="detail-field rounded py-2 px-4 mb-3">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="dob">Date of Birth</label>
+                                <input type="date" class="form-control" id="dob">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="adhar-no">Adhar Number</label>
+                                <input type="text" class="form-control" id="adhar-no">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-4 pt-4 border-bottom pb-4">
+                        <button type="submit" class="btn btn-info ml-auto mr-3">Add</button>
+                    </div>
+                    <div class="d-flex mb-4 pt-4">
+                            <button type="submit" class="btn btn-primary ml-auto mr-3">Back</button>
+                            <button type="submit" class="btn btn-primary mr-4">Next</button>
+                        </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Ends:Content-wrapper -->
+
+    <!-- Jquery Links -->
+    <script src="./vendor/jquery/jquery-3.3.1.slim.min.js"></script>
+    <script src="./vendor/bootstrap/js/popper.min.js"></script>
+    <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
